@@ -13,7 +13,7 @@ namespace NRulesDynamicRulesEngine.Repository
                 new Rule
                 {
                     Id = Guid.NewGuid(),
-                    Name = "Deactive users who haven't visited the site",
+                    Name = "Deactivate users who haven't visited the site",
                     Criteria = new List<RuleCriteria>
                     {
                         new RuleCriteria { Id = Guid.NewGuid(), PropertyName = "DateOfLastVisit", Operation = "Equals", Value = null }

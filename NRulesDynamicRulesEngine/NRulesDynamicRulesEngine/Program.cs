@@ -36,11 +36,11 @@ namespace NRulesDynamicRulesEngine
             // validate the rule output
             if (visitors.Count(v => v.IsActive) != 3)
             {
-                Console.WriteLine("There where more than 3 visitors left active");
+                Console.WriteLine("There were more than 3 visitors left active");
             }
             else
             {
-                Console.WriteLine("There where 3 active visitors left. This is correct..");
+                Console.WriteLine("There were 3 active visitors left. This is correct..");
             }
 
             Console.ReadLine();
