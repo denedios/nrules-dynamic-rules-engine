@@ -66,8 +66,7 @@ namespace NRulesDynamicRulesEngine
 
         private object ChangeType(object value, string propertyName)
         {
-            var type = _siteVisitorAccessor.GetMembers()
-                .Single(p => p.Name.Equals(propertyName, StringComparison.InvariantCultureIgnoreCase)).Type;
+            var type = _siteVisitorAccessor.GetMembers().Single(p => p.Name.Equals(propertyName, StringComparison.InvariantCultureIgnoreCase)).Type;
 
             if (Nullable.GetUnderlyingType(type) != null && value == null)
             {

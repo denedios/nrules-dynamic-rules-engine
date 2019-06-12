@@ -19,7 +19,7 @@ namespace NRulesDynamicRulesEngine
                 new SiteVisitor { Id = Guid.NewGuid(), UserName = "ArnoldSchwarzenegger", IsActive = true }
             };
 
-            // load the rules from the data store and buld NRules implementations
+            // load the rules from the data store and build NRules implementations
             var ruleBuilder = new DynamicRuleBuilder();
             ruleBuilder.GetRuleSets();
 
